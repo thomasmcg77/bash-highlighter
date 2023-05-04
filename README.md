@@ -12,3 +12,20 @@ One thing to note is that newline characters don't register in the input. If you
 To use the parser from terminal, run the file like you would with any standard python file (i.e. ```python3 highlight-bash.py```).
 You will then be prompted in the terminal to type in a command. This will be the bash script that you would like to be parsed and highlighted.
 The highlighted script will then be printed out to the terminal.
+
+
+### Example Scripts
+
+cat "file.txt" | sort | uniq -c
+
+mkdir mydir | cd mydir | vi "myfile.txt"
+
+ls -l | sort
+
+cat "../path/to/file.txt/" | grep "bash"
+
+gcc "test.cpp" -o "test"
+
+find "/path/to/file" -type f -mtime -print
+
+cat "path/to/file.txt" | tr "[:upper:]" "[:lower:]" | sort | uniq -c | head -n 5
