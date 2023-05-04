@@ -2,7 +2,7 @@
 
 ### Language Being Parsed
 
-The language I am parsing is bash. While I was not able to implement every feature of bash, it is able to parse the most used commands.
+The language I am parsing is bash. While I was not able to implement every feature of bash, it is able to parse the most used commands. The program will output the text provided with colors using ANSI escape codes. Each type (command, string, operator, etc.) will have a different color and acts as a sort of simulation of a syntax highlighter.
 
 ### Note
 One thing to note is that newline characters don't register in the input. If you want to test multi-line scripts, you can replace the input() function assigned to the 'script' variable with a string. Now when you run the program it will automatically output to the terminal instead of prompting you for a script in the terminal. Another thing to note is that loops don't currently work in the parser. They can be parsed when my grammar is used in the Lark online IDE, but I wasn't able to get the python program to parse them.
